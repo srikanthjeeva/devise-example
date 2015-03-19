@@ -1,3 +1,8 @@
+<div class="">
+    <%= content_tag(:div, notice_with_close_btn(flash[:error]), :id => "flash_error", :class=> "alert alert-danger alert-block") if flash[:error] %>
+    <%= content_tag(:div, notice_with_close_btn(flash[:notice]), :id => "flash_notice", :class=> "alert alert-success alert-block") if flash[:notice] %>
+    <%= content_tag(:div, notice_with_close_btn(flash[:alert]), :id => "flash_alert", :class=> "alert alert-danger alert-block") if flash[:alert] %>
+</div>
 <h1 class="page-header">Dashboard</h1>
 <h2 class="sub-header">Section title</h2>
 <div class="table-responsive">
