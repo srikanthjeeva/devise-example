@@ -33,6 +33,15 @@ gem 'devise'
 gem "twitter-bootstrap-rails"
 gem 'devise-bootstrap-views'
 
+#Rest client
+gem 'rest-client'
+
+#testing
+group :development, :test do
+  gem 'rspec-rails', '~> 3.0'
+  gem 'factory_girl_rails'
+end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
